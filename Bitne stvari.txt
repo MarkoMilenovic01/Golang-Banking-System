@@ -1,0 +1,5 @@
+Preko WSL ja mogu da koristim Linux terminal (Ubuntu app)
+Pullaj docker image preko hub.docker.com i napravi container sa env variables i osle toga koristi Table Plus da se povezes preko
+Koristi golang-migrate i koristi Makefile da se definisu custom commands za migracije.
+Koristi sqlc da pises querije... umesto GORM ili Manualno
+Pisi Unit testove
