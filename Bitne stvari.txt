@@ -3,3 +3,5 @@ Pullaj docker image preko hub.docker.com i napravi container sa env variables i 
 Koristi golang-migrate i koristi Makefile da se definisu custom commands za migracije.
 Koristi sqlc da pises querije... umesto GORM ili Manualno
 Pisi Unit testove
+ACID Properties for Database - Atomicity, Consistency, Isolation, Durability SQL Transaction BEGIN .... COMMIT ... ROLLBACK
+Pazi na deadlock - GetAccountForUpdate + 
