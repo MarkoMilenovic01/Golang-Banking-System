@@ -5,4 +5,6 @@ Koristi sqlc da pises querije... umesto GORM ili Manualno
 Pisi Unit testove
 ACID Properties for Database - Atomicity, Consistency, Isolation, Durability SQL Transaction BEGIN .... COMMIT ... ROLLBACK
 Pazi na deadlock - GetAccountForUpdate, pazi na redosled na koji se queriji izvrsavaju.
-GitHub Actions for CI - napravljen od Jobs 
+GitHub Actions for CI - napravljen od Jobs, Actions, Steps ==> Bukvalno step by step on push
+Layered architecture - DB Layer, API Layer etc....
+Pagination
