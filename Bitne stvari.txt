@@ -4,4 +4,5 @@ Koristi golang-migrate i koristi Makefile da se definisu custom commands za migr
 Koristi sqlc da pises querije... umesto GORM ili Manualno
 Pisi Unit testove
 ACID Properties for Database - Atomicity, Consistency, Isolation, Durability SQL Transaction BEGIN .... COMMIT ... ROLLBACK
-Pazi na deadlock - GetAccountForUpdate + 
+Pazi na deadlock - GetAccountForUpdate, pazi na redosled na koji se queriji izvrsavaju.
+GitHub Actions for CI - napravljen od Jobs 
