@@ -7,4 +7,6 @@ ACID Properties for Database - Atomicity, Consistency, Isolation, Durability SQL
 Pazi na deadlock - GetAccountForUpdate, pazi na redosled na koji se queriji izvrsavaju.
 GitHub Actions for CI - napravljen od Jobs, Actions, Steps ==> Bukvalno step by step on push
 Layered architecture - DB Layer, API Layer etc....
-Pagination
+API routes klasika s GIN
+Viper env config
+Database mocking testing - mockgen
