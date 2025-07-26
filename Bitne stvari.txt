@@ -10,3 +10,4 @@ Layered architecture - DB Layer, API Layer etc....
 API routes klasika s GIN
 Viper env config
 Database mocking testing - mockgen
+Custom Validator for params
