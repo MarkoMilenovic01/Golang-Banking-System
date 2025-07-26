@@ -11,3 +11,5 @@ API routes klasika s GIN
 Viper env config
 Database mocking testing - mockgen
 Custom Validator for params
+Users tabela - imaj u vidu da kad dodajes User tabelu moras opet da radis migraciju a to je problem kad si vec u production uso, bolje napravi novu verziju migracije
+Hashhing of passwords
