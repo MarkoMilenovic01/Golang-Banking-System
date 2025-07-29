@@ -12,4 +12,5 @@ Viper env config
 Database mocking testing - mockgen
 Custom Validator for params
 Users tabela - imaj u vidu da kad dodajes User tabelu moras opet da radis migraciju a to je problem kad si vec u production uso, bolje napravi novu verziju migracije
-Hashhing of passwords
+Hashing of passwords with bcrypt etc...
+JWT Token klasika + PASETO (bolji JWT jer JWT ima nesigurnosti s signing algorithms)
