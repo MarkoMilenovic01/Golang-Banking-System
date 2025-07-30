@@ -15,3 +15,5 @@ Users tabela - imaj u vidu da kad dodajes User tabelu moras opet da radis migrac
 Hashing of passwords with bcrypt etc...
 JWT Token klasika + PASETO (bolji JWT jer JWT ima nesigurnosti s signing algorithms)
 Middleware for authentization and authorization
+Git workflow for features
+Docker network - connecting 2 different containers
