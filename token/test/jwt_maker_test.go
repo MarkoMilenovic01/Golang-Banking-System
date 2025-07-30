@@ -1,7 +1,8 @@
-package token
+package test
 
 import (
 	"github.com/dgrijalva/jwt-go"
+	token2 "github.com/marko/simplebank/token"
 	"github.com/marko/simplebank/util"
 	"github.com/stretchr/testify/require"
 	"testing"
@@ -9,7 +10,7 @@ import (
 )
 
 func TestJWTMaker(t *testing.T) {
-	maker, err := NewJWTMaker(util.RandomString(32))
+	maker, err := token2.NewJWTMaker(util.RandomString(32))
 	require.NoError(t, err)
 
 	username := util.RandomOwner()
@@ -47,18 +48,18 @@ func TestJWTMaker(t *testing.T) {
 //}
 
 func TestInvalidJWTTokenAlgNone(t *testing.T) {
-	payload, err := NewPayload(util.RandomOwner(), time.Minute)
+	payload, err := token2.NewPayload(util.RandomOwner(), time.Minute)
 	require.NoError(t, err)
 
 	jwtToken := jwt.NewWithClaims(jwt.SigningMethodNone, payload)
 	token, err := jwtToken.SignedString(jwt.UnsafeAllowNoneSignatureType)
 	require.NoError(t, err)
-	maker, err := NewJWTMaker(util.RandomString(32))
+	maker, err := token2.NewJWTMaker(util.RandomString(32))
 	require.NoError(t, err)
 
 	payload, err = maker.VerifyToken(token)
 	require.Error(t, err)
-	require.EqualError(t, err, ErrInvalidToken.Error())
+	require.EqualError(t, err, token2.ErrInvalidToken.Error())
 	require.Nil(t, payload)
-	
+
 }

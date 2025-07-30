@@ -6,7 +6,9 @@ import (
 	"github.com/lib/pq"
 	db "github.com/marko/simplebank/db/sqlc"
 	"github.com/marko/simplebank/util"
+	"github.com/stretchr/testify/require"
 	"net/http"
+	"testing"
 	"time"
 )
 
@@ -119,4 +121,18 @@ func (server *Server) loginUser(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, rsp)
+}
+
+func randomUser(t *testing.T) (user db.User, password string) {
+	password = util.RandomString(6)
+	hashedPassword, err := util.HashPassword(password)
+	require.NoError(t, err)
+
+	user = db.User{
+		Username:       util.RandomOwner(),
+		HashedPassword: hashedPassword,
+		FullName:       util.RandomOwner(),
+		Email:          util.RandomEmail(),
+	}
+	return
 }

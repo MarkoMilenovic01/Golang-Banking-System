@@ -1,6 +1,7 @@
-package token
+package test
 
 import (
+	token2 "github.com/marko/simplebank/token"
 	"github.com/marko/simplebank/util"
 	"github.com/stretchr/testify/require"
 	"testing"
@@ -8,7 +9,7 @@ import (
 )
 
 func TestPasetoMaker(t *testing.T) {
-	maker, err := NewPasetoMaker([]byte(util.RandomString(32)))
+	maker, err := token2.NewPasetoMaker([]byte(util.RandomString(32)))
 	require.NoError(t, err)
 
 	username := util.RandomOwner()
@@ -32,7 +33,7 @@ func TestPasetoMaker(t *testing.T) {
 }
 
 func TestExpiredPasetoToken(t *testing.T) {
-	maker, err := NewPasetoMaker([]byte(util.RandomString(32)))
+	maker, err := token2.NewPasetoMaker([]byte(util.RandomString(32)))
 	require.NoError(t, err)
 
 	token, err := maker.CreateToken(util.RandomOwner(), -time.Minute)
