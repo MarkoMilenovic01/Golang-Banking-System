@@ -15,8 +15,5 @@ Users tabela - imaj u vidu da kad dodajes User tabelu moras opet da radis migrac
 Hashing of passwords with bcrypt etc...
 JWT Token klasika + PASETO (bolji JWT jer JWT ima nesigurnosti s signing algorithms)
 Middleware for authentization and authorization
-
--- Git workflow
-1. Never push changes directly on the master branch
-2. When working on a feature, create a separate branch from the master and merge it back when it's done and tested
-git checkout -b ft/docker
+Git workflow for features
+Docker network - connecting 2 different containers
