@@ -16,4 +16,6 @@ Hashing of passwords with bcrypt etc...
 JWT Token klasika + PASETO (bolji JWT jer JWT ima nesigurnosti s signing algorithms)
 Middleware for authentization and authorization
 Git workflow for features
-Docker network - connecting 2 different containers
+Docker network - connecting 2 different containers ili Docker compose (automatski pravi network i sve, samo se treba configurise koj prvi container se pali, koj drugi jer jedan zavisi od drugi)
+AWS - EC2 i S3 servisi (gledaj Free tier EC2) i ECR (Elastic Container Registry)
+IAM - Identity Account Management, User groups etc etc... GitHub secrets
