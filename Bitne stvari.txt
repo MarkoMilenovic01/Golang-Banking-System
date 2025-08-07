@@ -19,3 +19,9 @@ Git workflow for features
 Docker network - connecting 2 different containers ili Docker compose (automatski pravi network i sve, samo se treba configurise koj prvi container se pali, koj drugi jer jedan zavisi od drugi)
 AWS - EC2 i S3 servisi (gledaj Free tier EC2) i ECR (Elastic Container Registry)
 IAM - Identity Account Management, User groups etc etc... GitHub secrets
+EKS - Amazon Kubernetes Service Cluster
+Kubernetes - Container orchestration engine for automating deployment, scaling and management of containerized applications
+Worker Node + Kublet + Pod 1 + Pod 2 + Master node + API Server + etcd + scheduler
+Napravio sam taj cluster na EKS, sad koristim kubectl da se connectam na njega a k9s da upravljam s njega
+Deployment - nakon sto sam napravio taj cluster, koristim image koji sam storeovao u ECR i exposujem external IP
+Registracija domena i setup A-record - Route 53
